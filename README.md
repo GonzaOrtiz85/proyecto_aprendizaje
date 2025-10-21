@@ -3,7 +3,7 @@ Parcial_Aprendizaje_automatico
 
 Este es un repositorio de la materia Aprendizaje automatico
 
-## Segunda entrega – Dataset
+## Entregas – Parcial
 
 - Dataset crudo: `data/raw/a04-espectadores-cine-nivel-provincial.csv`
 - Descripción completa del dataset: `docs/descripcion_dataset.md`
