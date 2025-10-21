@@ -1,29 +1,29 @@
-# Descripción del dataset – Proyecto de Aprendizaje Automático
+# Descripción del dataset – Proyecto de Aprendisaje Automático
 
 **Nombre del dataset:** Espectadores de cine en Argentina por provincia (2001–2023)  
 **Archivo:** `data/raw/a04-espectadores-cine-nivel-provincial.csv`
 
-Origen y acceso
-- **Fuente:** datos públicos del ámbito cultural argentino (series históricas de público de cine por jurisdicción).  
-  Referencia institucional: Ministerio de Cultura / sistemas de estadísticas culturales publicados en **datos.gob.ar**.  
+## Origen y acceso
+- **Fuente:** datos públicos del ámbito cultural argentino (series históricas de publico de cine por jurisdicción).  
+  Referencia institucional: Ministerio de Cultura / sistema de estadísticas culturales publicados en **datos.gob.ar**.  
 - **Fecha de adquisición:** octubre 2024.  
-- **Licencia/uso:** datos de **dominio público** para fines académicos.  
-- **Procesamiento previo realizado para esta entrega:** **ninguno** (se publica el archivo tal como fue descargado; cualquier transformación se documentará en etapas posteriores).
+- **Licencia/uso:** datos de **dominio público** para fines academicos.  
+- **Procesamiento previo realizado para esta entrega:** **ninguno** (se publica el archivo tal cual fue descargado; cualquier transformación se va a documentar en las etapas posteriores).
 
-Cobertura y alcance
-- **Unidad de análisis:** cantidad anual de espectadores de cine por **provincia / jurisdicción**.  
+## Cobertura y alcance
+- **Unidad de analisis:** cantidad anual de espectadores de cine por **provincia / jurisdicción**.  
 - **Cobertura temporal:** **2001–2023** (23 años).  
-- **Cobertura geográfica:** 24 jurisdicciones + CABA (según códigos INDEC).
+- **Cobertura geografica:** 24 jurisdicciones + CABA (segun codigos INDEC).
 
-> Nota: el archivo original no incluye una columna explícita de “año”; cada **fila** corresponde secuencialmente a un año del período **2001…2023**.
+> Nota: el archivo original no incluye una columna explicita de “año”; cada **fila** corresponde secuencialmente a un año del periodo **2001–2023**.
 
-Estructura del archivo
+## Estructura del archivo
 - **Instancias (filas):** 23  
 - **Características (columnas):** 25  
-  - 24 columnas con conteos de espectadores por jurisdicción (una por provincia/código INDEC).  
-  - 1 columna índice implícita por fila (no está en el archivo; el orden de filas representa los años).
+  - 24 columnas con conteos de espectadores por jurisdicción (una por provincia/codigo INDEC).  
+  - 1 columna índice implicita por fila (no esta en el archivo; el orden de filas representa los años).
 
-Nombres de columnas (ejemplos)
+## Nombres de columnas (ejemplos)
 Las columnas siguen el patrón `espect_cine_XX`, donde `XX` es el **código INDEC** de la jurisdicción.  
 Listado completo de códigos y nombres:
 
@@ -54,13 +54,11 @@ Listado completo de códigos y nombres:
 | 90     | espect_cine_90    | Tucumán                 |
 | 94     | espect_cine_94    | Tierra del Fuego        |
 
-Tipos de datos
+## Tipos de datos
 - Todas las columnas `espect_cine_XX`: **entero** (conteo de espectadores por año y provincia).  
-  (En caso de encontrarse valores con separadores de miles en versiones alternativas del archivo, se aclarará su normalización en etapas posteriores; en esta entrega se mantiene el archivo original).
+  En caso de encontrarse valores con separadores de miles en versiones alternativas del archivo, se aclarará su normalización mas adelante. En esta entrega se mantiene el archivo original sin cambios.
 
-Observaciones relevantes
-- **Series con shock 2020–2021:** es esperable una caída abrupta por pandemia (COVID-19).  
+## Observaciones relevantes
+- **Series con shock 2020–2021:** se espera una caida abrupta por pandemia (COVID-19).  
 - **Interpretación temporal:** el orden de filas representa los años 2001→2023 (23 registros).  
-- **Uso previsto:** el dataset se empleará para análisis exploratorio y, en etapas posteriores, para construir modelos supervisados de **regresión** que estimen tendencias a partir de la información histórica disponible (de acuerdo con el material de las clases 1–5).
-
-
+- **Uso previsto:** el dataset se va a emplear para análisis exploratorio y, en etapas siguientes, para construir modelos supervisados de **regresión** que estimen tendencias a partir de la información histórica disponible (de acuerdo al material de las clases 1 a 5).
